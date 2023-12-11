@@ -126,7 +126,7 @@
 
 <button onclick="sortNumbers()">เรียงลำดับ</button>
 
-<div id="result"></div>
+<div id="resultes"></div>
 
 <script>
     function sortNumbers() {
@@ -138,7 +138,7 @@
         var sortedNumbers = inputNumbers.split(',').map(Number).sort((a, b) => a - b);
 
         // แสดงผลลัพธ์
-        var resultElement = document.getElementById("result");
+        var resultElement = document.getElementById("resultes");
         resultElement.innerHTML = "<p>ตัวเลขที่เรียงลำดับ: " + sortedNumbers.join(', ') + "</p>";
     }
 </script>
